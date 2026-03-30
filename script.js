@@ -51,6 +51,8 @@ if (presSections.length > 0) {
     if (sectionCounter) sectionCounter.textContent = (currentSection + 1) + " / " + presSections.length;
     if (prevBtn) prevBtn.disabled = currentSection === 0;
     if (nextBtn) nextBtn.disabled = currentSection === presSections.length - 1;
+    updatePresProgress(currentSection, presSections.length);
+    updateActiveNav(id);
   }
 
   if (prevBtn) prevBtn.addEventListener("click", function () { goToSection(currentSection - 1); });
@@ -78,4 +80,40 @@ if (presSections.length > 0) {
   presSections.forEach(function (s) { sectionObserver.observe(s); });
 
   updateNav();
+}
+
+// ── PAGE PROGRESS BAR ──────────────────────────────────────
+var pageProgress = document.getElementById('page-progress');
+if (pageProgress) {
+  window.addEventListener('scroll', function () {
+    var total = document.documentElement.scrollHeight - window.innerHeight;
+    pageProgress.style.width = total > 0 ? (window.scrollY / total * 100) + '%' : '0%';
+  }, { passive: true });
+}
+
+// ── SCROLL HINT HIDE ────────────────────────────────────────
+var scrollHint = document.querySelector('.scroll-hint');
+if (scrollHint) {
+  window.addEventListener('scroll', function hideHint() {
+    if (window.scrollY > 60) {
+      scrollHint.classList.add('hidden');
+      window.removeEventListener('scroll', hideHint);
+    }
+  }, { passive: true });
+}
+
+// ── PRES-NAV PROGRESS FILL ──────────────────────────────────
+function updatePresProgress(index, total) {
+  var fill = document.querySelector('.pres-progress-fill');
+  if (fill && total > 0) {
+    fill.style.width = ((index + 1) / total * 100) + '%';
+  }
+}
+
+// ── ACTIVE NAV LINK ─────────────────────────────────────────
+function updateActiveNav(sectionId) {
+  document.querySelectorAll('.nav-links a[href^="#"]').forEach(function (link) {
+    var href = link.getAttribute('href').replace('#', '');
+    link.classList.toggle('active', href === sectionId);
+  });
 }

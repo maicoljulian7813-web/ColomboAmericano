@@ -838,6 +838,207 @@ h1, h2, h3, h4 {
     transform: none;
   }
   .reveal { opacity: 1; }
+  .scroll-hint-arrow { animation: none; }
+  #page-progress { animation: none; }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ENHANCEMENTS
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+/* ─── PAGE PROGRESS BAR ─── */
+#page-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+  background-size: 200% 100%;
+  z-index: 999;
+  pointer-events: none;
+  box-shadow: 0 0 14px rgba(196, 147, 63, 0.55);
+  animation: progressShimmer 2.5s linear infinite;
+}
+
+@keyframes progressShimmer {
+  0%   { background-position: 200% center; }
+  100% { background-position: 0% center; }
+}
+
+/* ─── SCROLL HINT ─── */
+.scroll-hint {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 10;
+  opacity: 1;
+  transition: opacity 600ms ease;
+  pointer-events: none;
+  user-select: none;
+}
+
+.scroll-hint.hidden {
+  opacity: 0;
+}
+
+.scroll-hint-text {
+  font-size: 0.6rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+}
+
+.scroll-hint-arrow {
+  width: 18px;
+  height: 18px;
+  border-right: 1.5px solid rgba(255, 255, 255, 0.45);
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.45);
+  transform: rotate(45deg);
+  animation: arrowBounce 1.5s ease-in-out infinite;
+}
+
+@keyframes arrowBounce {
+  0%, 100% { transform: rotate(45deg) translateY(0px); opacity: 0.45; }
+  50%       { transform: rotate(45deg) translateY(6px); opacity: 1; }
+}
+
+/* ─── SECTION HEADING ACCENT LINE ─── */
+.section-heading {
+  position: relative;
+  padding-left: 24px;
+}
+
+.section-heading::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  bottom: 0;
+  width: 3px;
+  border-radius: 2px;
+  background: linear-gradient(to bottom, var(--gold), rgba(196, 147, 63, 0));
+}
+
+/* ─── CARD HOVER GOLD INSET ACCENT ─── */
+.reason-card:hover {
+  transform: translateY(-3px);
+  box-shadow: inset 3px 0 0 var(--gold), var(--shadow-md);
+}
+
+.practical-card {
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.practical-card:hover {
+  transform: translateY(-3px);
+  box-shadow: inset 3px 0 0 var(--gold), var(--shadow-md);
+}
+
+/* ─── FACT BOX HOVER ─── */
+.fact-box {
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.fact-box:hover {
+  transform: translateX(6px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(196, 147, 63, 0.35);
+}
+
+/* ─── NAV ACTIVE LINK ─── */
+.nav-links a.active {
+  background: rgba(196, 147, 63, 0.22);
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1px rgba(196, 147, 63, 0.3);
+}
+
+/* ─── PRESENTATION NAV PROGRESS STRIP ─── */
+.pres-progress {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.07);
+  overflow: hidden;
+}
+
+.pres-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  width: 0%;
+  transition: width 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 2px 0 10px rgba(196, 147, 63, 0.4);
+}
+
+/* ─── FOOTER ─── */
+.site-footer {
+  background: var(--navy);
+  padding: 56px 48px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-brand {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.04em;
+  margin: 0 0 4px;
+}
+
+.footer-tagline {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+.footer-divider {
+  width: 48px;
+  height: 1px;
+  background: rgba(196, 147, 63, 0.35);
+  margin: 0 auto 24px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 180ms ease;
+}
+
+.footer-links a:hover {
+  color: var(--gold-light);
+}
+
+.footer-note {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.25);
+  line-height: 1.8;
+  margin: 0;
+}
+
+@media (max-width: 680px) {
+  .site-footer { padding: 40px 20px; }
 }
 
 /* ─── RESPONSIVE 980px ─── */
