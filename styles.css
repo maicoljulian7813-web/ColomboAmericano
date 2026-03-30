@@ -819,6 +819,98 @@ h4 {
   transition-delay: 220ms;
 }
 
+/* Brand logo image */
+.brand-logo {
+  height: 54px;
+  width: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Presentation sections */
+.pres-section {
+  padding: 48px 0;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 24px;
+}
+
+.pres-section:last-child {
+  border-bottom: none;
+  padding-bottom: 100px;
+}
+
+.section-question {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.food-faq {
+  margin: 10px 0 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  padding-top: 8px;
+}
+
+/* Presentation navigation bar */
+.pres-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 32px;
+  background: rgba(18, 15, 12, 0.92);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pres-nav-btn {
+  padding: 10px 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff7ef;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 180ms ease;
+}
+
+.pres-nav-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.pres-nav-btn:disabled {
+  opacity: 0.28;
+  cursor: default;
+}
+
+.pres-nav-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.pres-nav-info #sectionTitle {
+  color: #fff7ef;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.pres-counter {
+  color: rgba(255, 247, 239, 0.55);
+  font-size: 0.8rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
