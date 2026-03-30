@@ -758,6 +758,59 @@ h1, h2, h3, h4 {
   font-size: 0.78rem;
 }
 
+/* ─── SECTION BANNER IMAGE ─── */
+.section-banner {
+  width: 100%;
+  height: 280px;
+  border-radius: 18px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 28px;
+  box-shadow: var(--shadow-md);
+}
+
+/* ─── INTRODUCTION WITH SIDE IMAGE ─── */
+.intro-with-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.intro-img {
+  height: 420px;
+  border-radius: 18px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--shadow-md);
+}
+
+.intro-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ─── ECO SECTION WITH SIDE IMAGE ─── */
+.eco-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.eco-cards {
+  grid-template-columns: 1fr;
+}
+
+.eco-img {
+  min-height: 340px;
+  border-radius: 18px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--shadow-md);
+}
+
 /* ─── UNUSED LEGACY CLASSES (kept for safety) ─── */
 .story-card, .detail-band, .concierge-section,
 .santa-feature, .finland-reasons, .practical-section,
@@ -784,8 +837,19 @@ h1, h2, h3, h4 {
   .practical-grid,
   .tour-grid,
   .collection-grid,
-  .hero-stat-grid {
+  .hero-stat-grid,
+  .intro-with-image,
+  .eco-layout {
     grid-template-columns: 1fr;
+  }
+
+  .eco-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .intro-img,
+  .eco-img {
+    height: 260px;
   }
 
   .hero-grid {
