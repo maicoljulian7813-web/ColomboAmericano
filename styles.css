@@ -1506,9 +1506,6 @@ section[id] {
 }
 
 .rules-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
   color: var(--cream-75);
   font-size: 0.9rem;
   line-height: 1.7;
@@ -1519,9 +1516,8 @@ section[id] {
 
 .rules-list li::before {
   content: '▸';
-  flex-shrink: 0;
   color: var(--accent);
-  margin-top: 1px;
+  margin-right: 10px;
 }
 
 /* ─── ECO SECTION ────────────────────────────────────────── */
