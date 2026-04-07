@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Venture Elite | Finland</title>
+  <title>Venture Elite | Finland — Rovaniemi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top" class="destination-page full-bleed">
@@ -14,12 +14,13 @@
   <div class="ambient ambient-two"></div>
 
   <div class="page-shell landing-shell">
+
     <header class="hero destination-hero finland-hero reveal">
       <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
         <source src="videos/finland-hero.mp4" type="video/mp4">
       </video>
 
-      <nav class="topbar">
+      <nav class="topbar" aria-label="Main navigation">
         <a class="brand-lockup" href="index.html">
           <div class="brand-mark">VE</div>
           <div class="brand-copy">
@@ -27,27 +28,26 @@
             <p class="brand-slogan">The world, tailored to you.</p>
           </div>
         </a>
-
         <div class="nav-links">
           <a href="index.html">Home</a>
-          <a href="#tours">Tours</a>
-          <a href="#details">Details</a>
-          <a href="egypt.html">Egypt</a>
+          <a href="#intro">Introduction</a>
+          <a href="#sports">Sports</a>
+          <a href="#eco">Eco Tips</a>
+          <a href="#food">Gastronomy</a>
+          <a href="#faq">FAQ</a>
+          <a href="egypt.html" class="nav-country">Egypt →</a>
         </div>
       </nav>
 
       <div class="hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Finland Destination Landing</p>
-          <h1>Rovaniemi with Arctic calm, Santa Claus magic, and snow-covered wonder.</h1>
+          <p class="eyebrow">Finland Destination Guide</p>
+          <h1>Rovaniemi, where the Arctic begins.</h1>
           <p class="hero-text">
-            Inspired by the feeling of a true Lapland destination page, this landing brings
-            together the Arctic Circle, Santa Claus Village, northern lights, reindeer moments,
-            and elegant winter experiences in one immersive story.
+            Northern Lights, Santa Claus Village, reindeer excursions, and pristine frozen forests. Finland is clean, safe, and magical — especially when explored with the right guide.
           </p>
-
           <div class="hero-actions">
-            <a class="hero-button primary" href="#tours">Explore Finland tours</a>
+            <a class="hero-button primary" href="#intro">Start exploring</a>
             <a class="hero-button secondary" href="index.html">Back to collection</a>
           </div>
         </div>
@@ -57,20 +57,20 @@
             <p class="panel-label">Rovaniemi at a glance</p>
             <div class="hero-stat-grid">
               <div class="hero-stat">
-                <strong>Arctic Circle</strong>
-                <span>One of Lapland's most iconic places to begin</span>
+                <strong>5.6M</strong>
+                <span>Population of Finland</span>
               </div>
               <div class="hero-stat">
-                <strong>Santa Claus</strong>
-                <span>The official hometown experience, year-round</span>
+                <strong>Arctic</strong>
+                <span>Circle crossing in Rovaniemi</span>
               </div>
               <div class="hero-stat">
-                <strong>Aurora</strong>
-                <span>Night skies, snow forests, and guided quiet escapes</span>
+                <strong>−30°C</strong>
+                <span>Winter temperatures possible</span>
               </div>
             </div>
             <div class="hero-panel-note">
-              Santa's Village mornings and northern lights under silent skies.
+              Wear warm, waterproof layers. Move carefully on snow and ice.
             </div>
           </div>
         </div>
@@ -78,141 +78,260 @@
     </header>
 
     <main>
-      <section class="destination-landing finland-landing">
-        <div class="finland-intro reveal">
-          <div class="intro-copy">
-            <p class="eyebrow dark">Introducing Rovaniemi</p>
-            <h2>A vibrant Lapland town surrounded by Arctic nature and winter imagination.</h2>
-            <p class="intro-lead">
-              Rovaniemi is where snowy forests, Santa Claus Village, and northern lights come
-              together in one destination. It feels calm, magical, and polished, especially when
-              explored through guided winter experiences.
-            </p>
-          </div>
-          <div class="landing-facts intro-facts">
-            <div class="fact-box">
-              <span>Signature mood</span>
-              <strong>Soft snow and northern lights</strong>
+      <div class="destination-landing finland-landing" style="width: min(1440px, calc(100% - 80px)); margin: 0 auto 80px;">
+
+        <!-- ── SECTION 1: INTRODUCTION ── -->
+        <section class="content-section" id="intro">
+          <p class="eyebrow dark reveal">Introduction</p>
+          <h2 class="reveal delay-1">Welcome to Finland</h2>
+
+          <div class="intro-two-col">
+            <div class="intro-body">
+              <p class="reveal delay-2">Finland is a country in <strong>Northern Europe</strong>. It has about <strong>5.6 million</strong> people. One famous place is <strong>Rovaniemi</strong>, with about 65,000 residents. Finland is a clean, modern, and safe country. Finnish people love nature, and they respect silence and order.</p>
+              <p class="reveal delay-3">Finland is famous for winter sports. People play <strong>ice hockey</strong>, and many people <strong>go</strong> skiing and <strong>go</strong> ice skating in winter.</p>
             </div>
-            <div class="fact-box">
-              <span>Best with</span>
-              <strong>Expert night tours and winter gear</strong>
+
+            <div class="there-are-box reveal delay-2">
+              <span class="there-are-title">In Finland, there are…</span>
+              <ul class="there-are-list">
+                <li>forests and lakes</li>
+                <li>reindeer</li>
+                <li>igloos</li>
+                <li>museums</li>
+                <li>ice hotels</li>
+              </ul>
             </div>
-            <div class="fact-box">
-              <span>Known for</span>
-              <strong>Santa Claus Village and Arctic Circle experiences</strong>
+          </div>
+
+          <div class="stats-strip">
+            <div class="stat-item reveal">
+              <strong>5.6M</strong><span>People in Finland</span>
             </div>
-          </div>
-        </div>
-
-        <div class="finland-reasons reveal">
-          <div class="section-heading">
-            <p class="eyebrow dark">Best Reasons To Visit</p>
-            <h3>Why Rovaniemi feels unforgettable</h3>
-          </div>
-
-          <div class="reason-grid">
-            <article class="reason-card reveal">
-              <span>01</span>
-              <h4>Meet Santa Claus in his official hometown</h4>
-              <p>Santa Claus Village gives the destination its instantly recognizable magic.</p>
-            </article>
-
-            <article class="reason-card reveal delay-1">
-              <span>02</span>
-              <h4>Watch the northern lights in peaceful surroundings</h4>
-              <p>Guided tours help travelers experience the aurora safely and more comfortably.</p>
-            </article>
-
-            <article class="reason-card reveal delay-2">
-              <span>03</span>
-              <h4>Enjoy snow adventures with a premium feel</h4>
-              <p>Sleigh rides, skating, husky-style experiences, and winter scenery create a full Arctic mood.</p>
-            </article>
-          </div>
-        </div>
-
-        <section class="santa-feature reveal">
-          <div class="santa-image"></div>
-          <div class="santa-copy">
-            <p class="eyebrow dark">Santa Claus Village</p>
-            <h3>The signature stop that defines the Rovaniemi experience.</h3>
-            <p>
-              For many travelers, Santa Claus Village is the emotional center of the trip. It is
-              festive, photogenic, and easy to combine with premium transport, warm drinks,
-              family moments, and Arctic Circle memories that feel both iconic and personal.
-            </p>
-            <div class="santa-points">
-              <div class="santa-point">Cross the Arctic Circle in one of Finland's most famous settings.</div>
-              <div class="santa-point">Pair the visit with reindeer, sleigh, or evening light experiences.</div>
-              <div class="santa-point">Ideal for families, couples, and travelers seeking a fairytale winter mood.</div>
+            <div class="stat-item reveal delay-1">
+              <strong>65K</strong><span>Residents in Rovaniemi</span>
+            </div>
+            <div class="stat-item reveal delay-2">
+              <strong>N. Europe</strong><span>Geographic location</span>
+            </div>
+            <div class="stat-item reveal delay-3">
+              <strong>Ice Hockey</strong><span>Most popular winter sport</span>
             </div>
           </div>
         </section>
 
-        <section class="finland-story-band reveal">
-          <article class="story-card">
-            <p class="card-label">Destination Story</p>
-            <h3>Elegant winter travel with the right pace and guidance</h3>
-            <p>
-              In Rovaniemi, travelers can combine Santa Claus Village, aurora borealis excursions,
-              snowy landscapes, and winter activities in one itinerary. Because conditions can be
-              cold, remote, and sometimes wild, the experience feels best with careful planning,
-              quiet movement in nature, and trusted local guides.
-            </p>
-          </article>
-          <div class="story-side-notes">
-            <div class="story-note">
-              <span>Winter sports</span>
-              <strong>Snowboarding, hockey, ice skating, and sleigh experiences all fit naturally here.</strong>
+        <!-- ── SECTION 2: SPORTS & ACTIVITIES ── -->
+        <section class="content-section" id="sports">
+          <p class="eyebrow dark reveal">Sports &amp; Activities</p>
+          <h2 class="reveal delay-1">What <em>Can</em> You Do?</h2>
+
+          <div class="sports-two-col">
+            <div class="activity-list">
+              <div class="activity-item reveal delay-2">
+                <div class="activity-icon">⛷</div>
+                <div>
+                  <h4>Visit Santa Claus Village &amp; see the Aurora</h4>
+                  <p>Tourists <strong>can</strong> visit <strong>Santa Claus Village</strong> and see the <strong>Aurora Borealis</strong> at night. They <strong>should</strong> sit quietly to enjoy the Northern Lights — and use a smartwatch to track their GPS route.</p>
+                </div>
+              </div>
+              <div class="activity-item reveal delay-3">
+                <div class="activity-icon">🏂</div>
+                <div>
+                  <h4>Snowboarding, skiing &amp; ice skating</h4>
+                  <p>Tourists <strong>can go</strong> snowboarding, <strong>can go</strong> skiing, and <strong>can go</strong> ice skating. They <strong>can</strong> also ride sleighs and go snowmobiling across the frozen landscape.</p>
+                </div>
+              </div>
+              <div class="activity-item reveal delay-4">
+                <div class="activity-icon">📸</div>
+                <div>
+                  <h4>Photography &amp; nature walks</h4>
+                  <p>Use their <strong>eyes</strong> to watch the sky. A <strong>smartwatch</strong> helps check activity and a <strong>sports camera</strong> captures the moment. Silent snow forests are perfect for photography.</p>
+                </div>
+              </div>
             </div>
-            <div class="story-note">
-              <span>Safety tip</span>
-              <strong>Choose guided evening tours and move carefully on snow and ice.</strong>
+
+            <div class="rules-box reveal delay-2">
+              <h4>⚠ Rules to Remember</h4>
+              <ul class="rules-list">
+                <li>Tourists <strong>should</strong> move <strong>carefully</strong> and act <strong>safely</strong> on ice and snow.</li>
+                <li>They <strong>can't</strong> throw garbage in nature or natural areas.</li>
+                <li>They <strong>can't</strong> disturb wild animals — including reindeer.</li>
+              </ul>
             </div>
           </div>
         </section>
 
-        <div class="tour-showcase" id="tours">
-          <div class="section-heading reveal">
-            <p class="eyebrow dark">Signature Tours</p>
-            <h3>Premium Arctic experiences</h3>
+        <!-- ── SECTION 3: ECO-FRIENDLY TIPS ── -->
+        <section class="content-section" id="eco">
+          <p class="eyebrow dark reveal">Eco-Friendly Tips</p>
+          <h2 class="reveal delay-1">Be Kind to Nature 🌿</h2>
+
+          <div class="eco-two-col">
+            <div class="eco-tips-grid">
+              <div class="eco-tip reveal delay-2">
+                <span class="eco-tip-icon">💧</span>
+                <p>Tourists <strong>should</strong> carry a reusable bottle — the tap water in Finland is very clean and drinkable.</p>
+              </div>
+              <div class="eco-tip reveal delay-3">
+                <span class="eco-tip-icon">🚌</span>
+                <p>They <strong>could</strong> use the local bus or electric transport to reduce pollution in the city.</p>
+              </div>
+              <div class="eco-tip reveal delay-4">
+                <span class="eco-tip-icon">🌲</span>
+                <p>They <strong>should</strong> respect wild animals and forests. Stay on marked paths and avoid disturbing nature.</p>
+              </div>
+              <div class="eco-tip reveal">
+                <span class="eco-tip-icon">🚶</span>
+                <p>They <strong>could</strong> walk in the city or use electric transport — Rovaniemi is compact and walkable.</p>
+              </div>
+              <div class="eco-tip reveal delay-1">
+                <span class="eco-tip-icon">🚫</span>
+                <p>They <strong>can't</strong> throw garbage in natural places — Finnish culture takes environmental respect very seriously.</p>
+              </div>
+            </div>
+
+            <div class="wear-box reveal delay-2">
+              <h4>👗 What to Wear</h4>
+              <p>Tourists <strong>should</strong> wear <strong>warm clothes</strong> and <strong>waterproof clothes</strong> because the weather is very <strong>cold</strong> in winter. Temperatures <strong>can</strong> drop to −30°C in Lapland. Thermal layers, gloves, and snow boots are essential.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── SECTION 4: GASTRONOMY ── -->
+        <section class="content-section" id="food">
+          <p class="eyebrow dark reveal">Gastronomy</p>
+          <h2 class="reveal delay-1">Finnish Food 🍽</h2>
+
+          <div class="dish-grid-web">
+            <article class="web-dish-card reveal delay-2"
+              data-country="finland"
+              data-img="https://commons.wikimedia.org/wiki/Special:FilePath/Poronk%C3%A4ristys.jpg"
+              data-name="Poronkäristys"
+              data-desc="Reindeer stew with butter and salt. It is <strong>salty</strong> and delicious. You eat it with a <strong>fork</strong> and a <strong>knife</strong>, and sometimes with a <strong>spoon</strong> for the sauce. A classic dish of Finnish Lapland."
+              data-tags="🥩 protein,🧈 fat">
+              <div class="wdc-image" style="background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Poronk%C3%A4ristys.jpg')"></div>
+              <div class="wdc-body">
+                <h4 class="wdc-name">Poronkäristys</h4>
+                <p class="wdc-desc">Reindeer stew with butter and salt. Salty, warm, and iconic in Lapland.</p>
+                <div class="wdc-tags">
+                  <span class="wdc-tag">🥩 protein</span>
+                  <span class="wdc-tag">🧈 fat</span>
+                </div>
+                <span class="wdc-hint">Tap to learn more</span>
+              </div>
+            </article>
+
+            <article class="web-dish-card reveal delay-3"
+              data-country="finland"
+              data-img="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=800&q=80"
+              data-name="Lohikeitto"
+              data-desc="A <strong>creamy</strong> salmon soup with potatoes and carrots. It is creamy and warm. You usually eat it with a <strong>spoon</strong>. Perfect for cold Finnish winters — filling, nutritious, and comforting."
+              data-tags="🐟 protein,🥦 vegetable,🥛 dairy">
+              <div class="wdc-image" style="background-image: url('https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=800&q=80')"></div>
+              <div class="wdc-body">
+                <h4 class="wdc-name">Lohikeitto</h4>
+                <p class="wdc-desc">Creamy salmon soup with potatoes and carrots. A warm winter classic.</p>
+                <div class="wdc-tags">
+                  <span class="wdc-tag">🐟 protein</span>
+                  <span class="wdc-tag">🥦 vegetable</span>
+                  <span class="wdc-tag">🥛 dairy</span>
+                </div>
+                <span class="wdc-hint">Tap to learn more</span>
+              </div>
+            </article>
+
+            <article class="web-dish-card reveal"
+              data-country="finland"
+              data-img="https://images.unsplash.com/photo-1604152135912-04a022e23696?auto=format&fit=crop&w=800&q=80"
+              data-name="Karelian Pies"
+              data-desc="Traditional rye pastry filled with rice porridge. A classic Finnish snack that dates back centuries. Crispy on the outside, soft and warm on the inside. You eat it with your hands or with a <strong>fork</strong>."
+              data-tags="🍞 carbohydrate,🌾 grain">
+              <div class="wdc-image" style="background-image: url('https://images.unsplash.com/photo-1604152135912-04a022e23696?auto=format&fit=crop&w=800&q=80')"></div>
+              <div class="wdc-body">
+                <h4 class="wdc-name">Karelian Pies</h4>
+                <p class="wdc-desc">Traditional rye pastry filled with rice porridge. A beloved Finnish snack.</p>
+                <div class="wdc-tags">
+                  <span class="wdc-tag">🍞 carbohydrate</span>
+                  <span class="wdc-tag">🌾 grain</span>
+                </div>
+                <span class="wdc-hint">Tap to learn more</span>
+              </div>
+            </article>
+
+            <article class="web-dish-card reveal delay-1"
+              data-country="finland"
+              data-img="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
+              data-name="Glögi 🍷"
+              data-desc="A hot berry drink with <strong>cinnamon</strong>, <strong>ginger</strong>, and <strong>cardamom</strong>. Perfect for cold winter nights in Rovaniemi. Finnish mulled drink — warming, aromatic, and festive. You drink it in a mug."
+              data-tags="🫐 berry,🌿 spice">
+              <div class="wdc-image" style="background-image: url('https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80')"></div>
+              <div class="wdc-body">
+                <h4 class="wdc-name">Glögi 🍷</h4>
+                <p class="wdc-desc">Hot berry drink with cinnamon, ginger, and cardamom. Perfect for cold nights.</p>
+                <div class="wdc-tags">
+                  <span class="wdc-tag">🫐 berry</span>
+                  <span class="wdc-tag">🌿 spice</span>
+                </div>
+                <span class="wdc-hint">Tap to learn more</span>
+              </div>
+            </article>
           </div>
 
-          <div class="tour-grid">
-            <article class="tour-card reveal">
-              <div class="tour-image" style="background-image: url('https://images.pexels.com/photos/624015/pexels-photo-624015.jpeg?auto=compress&cs=tinysrgb&w=1400');"></div>
-              <div class="tour-body">
-                <p class="tour-type">Evening Tour</p>
-                <h4>Aurora Borealis Escape</h4>
-                <p>Private-style night excursion with silent viewing points and expert guidance.</p>
-              </div>
-            </article>
-
-            <article class="tour-card reveal delay-1">
-              <div class="tour-image" style="background-image: url('https://images.pexels.com/photos/10372505/pexels-photo-10372505.jpeg?auto=compress&cs=tinysrgb&w=1400');"></div>
-              <div class="tour-body">
-                <p class="tour-type">Family Favorite</p>
-                <h4>Santa's Village Signature Visit</h4>
-                <p>Meet the iconic Christmas setting with polished transport and warm local stops.</p>
-              </div>
-            </article>
-
-            <article class="tour-card reveal delay-2">
-              <div class="tour-image" style="background-image: url('https://images.pexels.com/photos/6667935/pexels-photo-6667935.jpeg?auto=compress&cs=tinysrgb&w=1400');"></div>
-              <div class="tour-body">
-                <p class="tour-type">Adventure Tour</p>
-                <h4>Sleigh and Snow Experience</h4>
-                <p>Fast-paced winter fun with careful route planning and safety-first hosts.</p>
-              </div>
-            </article>
+          <div class="restaurant-box reveal delay-2">
+            <h4>📍 Famous Restaurants in Rovaniemi</h4>
+            <div class="rest-chips-row">
+              <span class="rest-chip-web">🍽 Nili Restaurant</span>
+              <span class="rest-chip-web">🍽 Roka Street Bistro</span>
+              <span class="rest-chip-web">🍽 Santa's Salmon Place</span>
+            </div>
           </div>
-        </div>
+        </section>
 
-        <div class="detail-band reveal" id="details">
+        <!-- ── SECTION 5: FAQ ── -->
+        <section class="content-section" id="faq">
+          <p class="eyebrow dark reveal">Frequently Asked Questions</p>
+          <h2 class="reveal delay-1">Finland FAQ ❓</h2>
+
+          <div class="faq-web-grid">
+            <div class="faq-web-item reveal delay-2">
+              <p class="faq-web-q">When do the Northern Lights appear?</p>
+              <p class="faq-web-a">Usually between <strong>9:00 p.m.</strong> and <strong>2:00 a.m.</strong> in winter months. September through March is the best window.</p>
+            </div>
+            <div class="faq-web-item reveal delay-3">
+              <p class="faq-web-q">Can I walk safely at night?</p>
+              <p class="faq-web-a">Yes! Tourists <strong>can</strong> walk safely at night in Rovaniemi. The city is safe and well-lit even in winter darkness.</p>
+            </div>
+            <div class="faq-web-item reveal delay-4">
+              <p class="faq-web-q">Should I bring warm and waterproof clothes?</p>
+              <p class="faq-web-a">Yes, they <strong>should</strong>, because the temperature is very low — sometimes below −20°C in Lapland.</p>
+            </div>
+            <div class="faq-web-item reveal">
+              <p class="faq-web-q">Can I pay with a contactless card?</p>
+              <p class="faq-web-a">Yes, tourists <strong>can</strong> pay for public transport and most services with a contactless card. Finland is very digital.</p>
+            </div>
+            <div class="faq-web-item reveal delay-1">
+              <p class="faq-web-q">Is the tap water drinkable?</p>
+              <p class="faq-web-a">Yes! Finnish tap water is one of the cleanest in the world. A reusable bottle is enough.</p>
+            </div>
+            <div class="faq-web-item reveal delay-2">
+              <p class="faq-web-q">How far is Santa Claus Village?</p>
+              <p class="faq-web-a">About <strong>8 kilometers</strong> from central Rovaniemi, or <strong>15 minutes</strong> by bus from the city center.</p>
+            </div>
+            <div class="faq-web-item reveal delay-3">
+              <p class="faq-web-q">Where do I buy tickets for activities?</p>
+              <p class="faq-web-a">Tourists <strong>can</strong> buy tickets online, at tourist information points, or at the activity center in Rovaniemi.</p>
+            </div>
+            <div class="faq-web-item reveal delay-4">
+              <p class="faq-web-q">How much money for activities?</p>
+              <p class="faq-web-a">Tourists usually spend about <strong>50 to 150 euros</strong> per activity, depending on the experience.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── PRACTICAL STRIP ── -->
+        <div class="detail-band reveal">
           <div class="detail-block">
             <span>Wear</span>
-            <strong>Layered thermal clothing, gloves, and snow boots</strong>
+            <strong>Layered thermal clothing, waterproof jacket, gloves, and snow boots</strong>
           </div>
           <div class="detail-block">
             <span>Move with care</span>
@@ -220,42 +339,92 @@
           </div>
           <div class="detail-block">
             <span>Ideal booking</span>
-            <strong>Guided evening tours and winter sports packages</strong>
+            <strong>Guided evening aurora tours and winter sports packages</strong>
           </div>
         </div>
 
-        <section class="practical-section reveal">
-          <div class="section-heading">
-            <p class="eyebrow dark">Useful Things To Know</p>
-            <h3>Practical guidance before you go</h3>
-          </div>
-
-          <div class="practical-grid">
-            <article class="practical-card">
-              <h4>Where is Rovaniemi?</h4>
-              <p>Rovaniemi sits in Finnish Lapland on the Arctic Circle, making it one of the best-known gateways to northern Finland.</p>
-            </article>
-
-            <article class="practical-card">
-              <h4>How do you get there?</h4>
-              <p>Travelers commonly connect through Helsinki and continue by plane or overnight train for a more scenic route.</p>
-            </article>
-
-            <article class="practical-card">
-              <h4>How do you move around?</h4>
-              <p>The town is manageable, but Santa Claus Village and outdoor experiences are easier with local transport or organized tours.</p>
-            </article>
-
-            <article class="practical-card">
-              <h4>What is the weather like?</h4>
-              <p>Winter can be deeply cold, so high-quality layers are essential. Conditions also change quickly, which is why guided planning adds comfort.</p>
-            </article>
-          </div>
-        </section>
-      </section>
+      </div>
     </main>
+
+    <footer class="site-footer">
+      <p>✈ &nbsp;<strong>Venture Elite Travel Agency</strong> &nbsp;·&nbsp; <a href="index.html">Home</a> &nbsp;·&nbsp; <a href="egypt.html">Egypt →</a></p>
+    </footer>
+  </div>
+
+  <!-- Dish overlay -->
+  <div id="webDishOverlay" class="web-dish-overlay" role="dialog" aria-modal="true">
+    <div class="web-overlay-card" id="webOverlayCard">
+      <button class="web-overlay-close" id="webOverlayClose" aria-label="Close">✕</button>
+      <img class="web-overlay-img" id="webOverlayImg" src="" alt="">
+      <div class="web-overlay-body">
+        <p class="web-overlay-country" id="webOverlayCountry"></p>
+        <h3 class="web-overlay-name" id="webOverlayName"></h3>
+        <p class="web-overlay-desc" id="webOverlayDesc"></p>
+        <div class="web-overlay-tags" id="webOverlayTags"></div>
+        <p class="web-overlay-esc">Press Esc or click outside to close</p>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
+  <script>
+    /* ── DISH OVERLAY ── */
+    class WebDishOverlay {
+      constructor() {
+        this.overlay = document.getElementById('webDishOverlay');
+        this.card    = document.getElementById('webOverlayCard');
+        this.img     = document.getElementById('webOverlayImg');
+        this.country = document.getElementById('webOverlayCountry');
+        this.name    = document.getElementById('webOverlayName');
+        this.desc    = document.getElementById('webOverlayDesc');
+        this.tags    = document.getElementById('webOverlayTags');
+        this.setupCards();
+        document.getElementById('webOverlayClose').addEventListener('click', () => this.close());
+        this.overlay.addEventListener('click', e => { if (e.target === this.overlay) this.close(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') this.close(); });
+      }
+      setupCards() {
+        document.querySelectorAll('.web-dish-card').forEach(card => {
+          card.addEventListener('click', () => this.open(card));
+        });
+      }
+      open(card) {
+        const c = card.dataset.country || 'finland';
+        this.img.src = card.dataset.img || '';
+        this.img.alt = card.dataset.name || '';
+        this.country.textContent = c === 'finland' ? '🇫🇮 Finland' : '🇪🇬 Egypt';
+        this.name.textContent = card.dataset.name || '';
+        this.desc.innerHTML  = card.dataset.desc || '';
+        const tagStr = card.dataset.tags || '';
+        this.tags.innerHTML = tagStr ? tagStr.split(',').map(t =>
+          `<span class="web-overlay-tag">${t.trim()}</span>`).join('') : '';
+        this.card.className = `web-overlay-card ${c}-theme`;
+        this.overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+      close() {
+        this.overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    /* ── ACTIVE NAV LINK HIGHLIGHT ── */
+    const sections = document.querySelectorAll('.content-section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+
+    const navObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(a => {
+            a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id);
+          });
+        }
+      });
+    }, { threshold: 0.4 });
+
+    sections.forEach(s => navObserver.observe(s));
+
+    new WebDishOverlay();
+  </script>
 </body>
 </html>

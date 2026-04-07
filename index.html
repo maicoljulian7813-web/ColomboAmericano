@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Venture Elite</title>
+  <title>Venture Elite — Luxury Travel Agency</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top" class="full-bleed">
@@ -27,24 +27,20 @@
             <p class="brand-slogan">The world, tailored to you.</p>
           </div>
         </a>
-
         <div class="nav-links">
           <a href="#collection">Collection</a>
-          <a href="finland.html">Finland</a>
-          <a href="egypt.html">Egypt</a>
+          <a href="finland.html" class="nav-country">Finland</a>
+          <a href="egypt.html" class="nav-country">Egypt</a>
         </div>
       </nav>
 
       <div class="hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Luxury Travel Curations</p>
-          <h1>Choose between Arctic wonder and desert grandeur.</h1>
+          <h1>Cold wonder.<br><em style="color:var(--gold-hi)">Desert gold.</em></h1>
           <p class="hero-text">
-            Venture Elite presents two destination landings with a cleaner luxury feel: snowy
-            Rovaniemi in Finnish Lapland and Cairo with pyramids, desert light, and iconic
-            cultural energy.
+            Venture Elite presents two extraordinary destinations — each with its own dedicated experience guide. Arctic Lapland in Finland, and the legendary city of Cairo, Egypt. Precision-planned. Beautifully curated.
           </p>
-
           <div class="hero-actions">
             <a class="hero-button primary" href="#collection">Explore the collection</a>
             <a class="hero-button secondary" href="finland.html">Start with Finland</a>
@@ -53,19 +49,19 @@
 
         <div class="hero-panel reveal delay-1">
           <div class="hero-panel-card">
-            <p class="panel-label">Collection Overview</p>
+            <p class="panel-label">Destinations at a Glance</p>
             <div class="overview-list">
               <div class="overview-item">
-                <span>Finland</span>
-                <strong>Rovaniemi, snow, aurora, Santa Claus Village</strong>
+                <span>🇫🇮 Finland — Rovaniemi</span>
+                <strong>Aurora borealis, Santa Claus Village, Arctic winter sports, reindeer, clean nature</strong>
               </div>
               <div class="overview-item">
-                <span>Egypt</span>
-                <strong>Cairo, pyramids, camel rides, desert atmosphere</strong>
+                <span>🇪🇬 Egypt — Cairo</span>
+                <strong>Pyramids of Giza, camel rides, Nile River, historic monuments, vibrant culture</strong>
               </div>
             </div>
             <div class="hero-panel-note">
-              Designed as destination-first pages with a premium editorial mood.
+              Each destination page follows a complete guide: introduction, sports, eco tips, gastronomy, and FAQ.
             </div>
           </div>
         </div>
@@ -73,29 +69,57 @@
     </header>
 
     <main>
-      <section class="collection-section reveal" id="collection">
+      <section class="why-section reveal" style="width: min(1440px, calc(100% - 80px)); margin: 0 auto;">
+        <div class="section-heading">
+          <p class="eyebrow dark">Why Venture Elite</p>
+          <h2>More than a travel guide.</h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-card reveal delay-1">
+            <div class="why-num">01</div>
+            <h4>Destination-first design</h4>
+            <p>Every page is built around a single place — its culture, food, sports, and practical tips — so travelers arrive prepared and inspired.</p>
+          </div>
+          <div class="why-card reveal delay-2">
+            <div class="why-num">02</div>
+            <h4>Eco-conscious travel</h4>
+            <p>We include practical sustainability guidance for each destination: what to wear, how to move, how to respect the environment and local customs.</p>
+          </div>
+          <div class="why-card reveal delay-3">
+            <div class="why-num">03</div>
+            <h4>Curated gastronomy</h4>
+            <p>Each guide features iconic local dishes, food group information, and handpicked restaurants — because food is the heart of every trip.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="collection-section reveal" id="collection" style="width: min(1440px, calc(100% - 80px)); margin: 0 auto 80px;">
         <div class="section-heading">
           <p class="eyebrow dark">Destination Collection</p>
-          <h2>Two destinations, each with its own dedicated landing.</h2>
+          <h2>Two destinations, one extraordinary agency.</h2>
         </div>
 
         <div class="collection-grid">
           <a class="collection-card finland-card reveal delay-1" href="finland.html">
             <span class="collection-kicker">Finland</span>
             <h3>Rovaniemi</h3>
-            <p>Santa's Village, aurora borealis nights, sleigh rides, and snowy sports.</p>
-            <span class="collection-link">Open destination landing</span>
+            <p>Aurora borealis nights, Santa's Village, reindeer excursions, and pristine Arctic nature. The ultimate winter wonder.</p>
+            <span class="collection-link">Explore Finland</span>
           </a>
 
           <a class="collection-card egypt-card reveal delay-2" href="egypt.html">
             <span class="collection-kicker">Egypt</span>
             <h3>Cairo</h3>
-            <p>Pyramids, desert landscapes, camel tours, and warm cultural encounters.</p>
-            <span class="collection-link">Open destination landing</span>
+            <p>Pyramids of Giza, golden desert landscapes, camel rides at sunset, and a city alive with history and culture.</p>
+            <span class="collection-link">Explore Egypt</span>
           </a>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p>✈ &nbsp;<strong>Venture Elite Travel Agency</strong> &nbsp;·&nbsp; <a href="finland.html">Finland</a> &nbsp;·&nbsp; <a href="egypt.html">Egypt</a></p>
+    </footer>
   </div>
 
   <script src="script.js"></script>

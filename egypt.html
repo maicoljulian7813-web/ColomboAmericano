@@ -3,18 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Venture Elite | Egypt</title>
+  <title>Venture Elite | Egypt — Cairo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top" class="destination-page full-bleed">
-  <div id="page-progress"></div>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
 
   <div class="page-shell landing-shell">
+
     <header class="hero destination-hero egypt-hero reveal">
-      <nav class="topbar">
+      <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+        <source src="videos/egypt-hero.mp4" type="video/mp4">
+      </video>
+
+      <nav class="topbar" aria-label="Main navigation">
         <a class="brand-lockup" href="index.html">
           <div class="brand-mark">VE</div>
           <div class="brand-copy">
@@ -24,24 +30,24 @@
         </a>
         <div class="nav-links">
           <a href="index.html">Home</a>
-          <a href="#introduction">Intro</a>
+          <a href="#intro">Introduction</a>
           <a href="#sports">Sports</a>
           <a href="#eco">Eco Tips</a>
-          <a href="#food">Food</a>
+          <a href="#food">Gastronomy</a>
           <a href="#faq">FAQ</a>
-          <a href="finland.html">Finland</a>
+          <a href="finland.html" class="nav-country">Finland →</a>
         </div>
       </nav>
 
       <div class="hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Egypt — Destination</p>
-          <h1>Cairo, "The Metropolis of a Thousand Minarets"</h1>
+          <p class="eyebrow">Egypt Destination Guide</p>
+          <h1>Cairo — golden heat, ancient icons.</h1>
           <p class="hero-text">
-            The biggest Arab city with 22 million residents. Young, dynamic, and the artistic and intellectual center of the region. Friendly people, and the Nile River is the heart of the city.
+            Pyramids of Giza, camel rides at golden hour, the mighty Nile River, and a city alive with history, culture, and energy. Egypt rewards every traveler who comes prepared.
           </p>
           <div class="hero-actions">
-            <a class="hero-button primary" href="#introduction">Start Presentation</a>
+            <a class="hero-button primary" href="#intro">Start exploring</a>
             <a class="hero-button secondary" href="index.html">Back to collection</a>
           </div>
         </div>
@@ -52,203 +58,375 @@
             <div class="hero-stat-grid">
               <div class="hero-stat">
                 <strong>22M</strong>
-                <span>Residents in the urban zone</span>
+                <span>Residents in Cairo</span>
               </div>
               <div class="hero-stat">
-                <strong>Nile</strong>
-                <span>The heart of the city</span>
+                <strong>Giza</strong>
+                <span>Three great pyramids nearby</span>
               </div>
               <div class="hero-stat">
-                <strong>Culture</strong>
-                <span>Artistic &amp; intellectual center</span>
+                <strong>38°C</strong>
+                <span>Summer temperatures in Cairo</span>
               </div>
-            </div>
-            <div class="hero-panel-note">
-              Young, dynamic, and full of history — from the Pyramids to the desert.
             </div>
           </div>
+          <div class="floating-review">
+            <p class="review-tag">Desert mood</p>
+            <p class="review-copy">Camel trails at sunset, heritage landmarks, and luminous city energy.</p>
+          </div>
         </div>
-      </div>
-
-      <div class="scroll-hint" aria-hidden="true">
-        <span class="scroll-hint-text">Start presentation</span>
-        <div class="scroll-hint-arrow"></div>
       </div>
     </header>
 
     <main>
-      <section class="destination-landing egypt-landing">
+      <div class="destination-landing egypt-landing" style="width: min(1440px, calc(100% - 80px)); margin: 0 auto 80px;">
 
-        <!-- SECTION 1: Introduction -->
-        <div class="pres-section reveal" id="introduction">
-          <div class="section-heading">
-            <p class="eyebrow dark">Section 1 of 5</p>
-            <h2>About Cairo</h2>
+        <!-- ── SECTION 1: INTRODUCTION ── -->
+        <section class="content-section" id="intro">
+          <p class="eyebrow dark reveal">Introduction</p>
+          <h2 class="reveal delay-1">Welcome to Egypt</h2>
+
+          <div class="intro-two-col">
+            <div class="intro-body">
+              <p class="reveal delay-2">Egypt is a country in <strong>North Africa</strong>. Its capital city is <strong>Cairo</strong>, with about <strong>22 million</strong> residents. Egypt is famous for history, culture, and art. The people are friendly, and the <strong>Nile River</strong> is very important in the city.</p>
+              <p class="reveal delay-3">Egypt is also famous for <strong>soccer</strong>. Many people play soccer, and it is a very popular sport in the country. <strong>Mohamed Salah</strong> is one of the most famous Egyptian football players in the world.</p>
+            </div>
+
+            <div class="there-are-box reveal delay-2">
+              <span class="there-are-title">In Egypt, there are…</span>
+              <ul class="there-are-list">
+                <li>pyramids</li>
+                <li>camels</li>
+                <li>mosques</li>
+                <li>markets</li>
+                <li>amazing sunsets</li>
+              </ul>
+            </div>
           </div>
-          <div class="intro-with-image">
-            <div class="intro-img" style="background-image: url('https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1200&q=80');"></div>
-            <div class="intro-right">
-              <p class="intro-lead">
-                Cairo is the <strong>biggest Arab city</strong>; 22 million residents are living here in the urban zone.
-                The residents are <strong>young and dynamic</strong>. Cairo is the artistic and intellectual center of the region.
-                The people are very friendly, and the <strong>Nile River</strong> is the heart of the city.
-              </p>
-              <div class="landing-facts">
-                <div class="fact-box">
-                  <span>Population</span>
-                  <strong>22 million residents</strong>
+
+          <div class="stats-strip">
+            <div class="stat-item reveal">
+              <strong>22M</strong><span>People in Cairo</span>
+            </div>
+            <div class="stat-item reveal delay-1">
+              <strong>N. Africa</strong><span>Geographic location</span>
+            </div>
+            <div class="stat-item reveal delay-2">
+              <strong>3</strong><span>Great Pyramids in Giza</span>
+            </div>
+            <div class="stat-item reveal delay-3">
+              <strong>Soccer</strong><span>Most popular sport</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── SECTION 2: SPORTS & ACTIVITIES ── -->
+        <section class="content-section" id="sports">
+          <p class="eyebrow dark reveal">Sports &amp; Activities</p>
+          <h2 class="reveal delay-1">What <em>Can</em> You Do?</h2>
+
+          <div class="sports-two-col">
+            <div class="activity-list">
+              <div class="activity-item reveal delay-2">
+                <div class="activity-icon">🏛</div>
+                <div>
+                  <h4>Visit the Pyramids &amp; explore the desert</h4>
+                  <p>Tourists <strong>can</strong> visit the pyramids, explore the desert, ride a camel, and <strong>can also go</strong> sandboarding. They use their <strong>legs</strong> and <strong>feet</strong> to keep balance on sand dunes.</p>
                 </div>
-                <div class="fact-box">
-                  <span>The Nile River</span>
-                  <strong>Heart of the city</strong>
+              </div>
+              <div class="activity-item reveal delay-3">
+                <div class="activity-icon">🐫</div>
+                <div>
+                  <h4>Camel rides at sunset</h4>
+                  <p>One of the most memorable experiences in Cairo. Tourists <strong>should</strong> be careful — the animal is tall, strong, and fast. Always ride with a <strong>guide</strong>.</p>
                 </div>
-                <div class="fact-box">
-                  <span>Character</span>
-                  <strong>Young, dynamic, artistic &amp; intellectual</strong>
+              </div>
+              <div class="activity-item reveal delay-4">
+                <div class="activity-icon">📱</div>
+                <div>
+                  <h4>Track your adventure</h4>
+                  <p>Tourists <strong>could</strong> use a <strong>fitness tracker</strong> to check their physical effort. A <strong>sports camera</strong> is great for capturing pyramid views. They use their <strong>arms</strong> to control movement on camels.</p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <!-- SECTION 2: Sports & Activities -->
-        <div class="pres-section reveal" id="sports">
-          <div class="section-heading">
-            <p class="eyebrow dark">Section 2 of 5</p>
-            <h2>Sports &amp; Activities</h2>
-            <p class="section-question">What sports can I practice in this city?</p>
-          </div>
-          <div class="section-banner" style="background-image: url('https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=1400&q=80');"></div>
-          <div class="reason-grid">
-            <article class="reason-card reveal">
-              <span>01</span>
-              <h4>Soccer Culture</h4>
-              <p>In this country it is very common to find Salah's t-shirts because he is the most famous soccer player. People sometimes play soccer in the desert.</p>
-            </article>
-            <article class="reason-card reveal delay-1">
-              <span>02</span>
-              <h4>Play with Locals</h4>
-              <p>You can play with them, but carefully because the temperature is high.</p>
-            </article>
-          </div>
-        </div>
-
-        <!-- SECTION 3: Eco-Friendly Tips -->
-        <div class="pres-section reveal" id="eco">
-          <div class="section-heading">
-            <p class="eyebrow dark">Section 3 of 5</p>
-            <h2>Eco-Friendly Tips</h2>
-            <p class="section-question">What kind of places would I visit?</p>
-          </div>
-          <div class="eco-layout">
-            <div class="reason-grid eco-cards">
-              <article class="reason-card reveal">
-                <span>01</span>
-                <h4>Pyramids &amp; Desert</h4>
-                <p>In Cairo you can see the pyramids and the desert. You need to wear light clothes because it is very warm, and you need to stay fresh for different activities.</p>
-              </article>
-              <article class="reason-card reveal delay-1">
-                <span>02</span>
-                <h4>Camel Rides</h4>
-                <p>In this city you can ride a camel, but carefully because this animal is tall and fast. You ride with a guide safely.</p>
-              </article>
+            <div class="rules-box reveal delay-2">
+              <h4>⚠ Rules to Remember</h4>
+              <ul class="rules-list">
+                <li>Tourists <strong>should</strong> be careful — the weather is very hot.</li>
+                <li>They <strong>can't</strong> take pictures without permission inside monuments.</li>
+                <li>They <strong>can't</strong> mistreat animals — camels and horses must be respected.</li>
+                <li>They <strong>should</strong> act respectfully in mosques and cultural places.</li>
+              </ul>
             </div>
-            <div class="eco-img" style="background-image: url('https://images.unsplash.com/photo-1572252009286-268acec5ca0a?auto=format&fit=crop&w=900&q=80');"></div>
+          </div>
+        </section>
+
+        <!-- ── SECTION 3: ECO-FRIENDLY TIPS ── -->
+        <section class="content-section" id="eco">
+          <p class="eyebrow dark reveal">Eco-Friendly Tips</p>
+          <h2 class="reveal delay-1">Respect &amp; Protect 🌍</h2>
+
+          <div class="eco-two-col">
+            <div class="eco-tips-grid">
+              <div class="eco-tip reveal delay-2">
+                <span class="eco-tip-icon">🏛</span>
+                <p>Tourists <strong>should</strong> respect monuments, animals, and local culture — these places are thousands of years old.</p>
+              </div>
+              <div class="eco-tip reveal delay-3">
+                <span class="eco-tip-icon">🚫</span>
+                <p>They <strong>should not</strong> throw garbage in the desert or near historical places — littering is disrespectful and harmful.</p>
+              </div>
+              <div class="eco-tip reveal delay-4">
+                <span class="eco-tip-icon">🚌</span>
+                <p>They <strong>could</strong> use organized transport and travel with a local guide to reduce environmental impact.</p>
+              </div>
+              <div class="eco-tip reveal">
+                <span class="eco-tip-icon">💧</span>
+                <p>They <strong>should</strong> drink water frequently to stay healthy in the heat. Dehydration is a real risk in Cairo.</p>
+              </div>
+              <div class="eco-tip reveal delay-1">
+                <span class="eco-tip-icon">👣</span>
+                <p>They <strong>should</strong> walk <strong>carefully</strong> in the desert — the sand is unstable and the terrain can be dangerous.</p>
+              </div>
+            </div>
+
+            <div class="wear-box reveal delay-2">
+              <h4>👗 What to Wear</h4>
+              <p>Tourists <strong>should</strong> wear <strong>light clothes</strong> because the weather is warm — sometimes above 38°C. Breathable fabrics, sunglasses, a hat, and sun protection are essential. They <strong>should</strong> cover shoulders in mosques as a sign of respect.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── SECTION 4: GASTRONOMY ── -->
+        <section class="content-section" id="food">
+          <p class="eyebrow dark reveal">Gastronomy</p>
+          <h2 class="reveal delay-1">Egyptian Food 🍽</h2>
+
+          <div class="dish-grid-web">
+            <article class="web-dish-card reveal delay-2"
+              data-country="egypt"
+              data-img="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80"
+              data-name="Koshary"
+              data-desc="Rice, pasta, lentils, tomato sauce, and crispy onions. Egypt's most popular street food — hearty, filling, and affordable. You usually eat it with a <strong>spoon</strong> or a <strong>fork</strong>. A <strong>carbohydrate-rich</strong> dish perfect for energy."
+              data-tags="🍚 carbohydrate,🥩 protein">
+              <div class="wdc-image" style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80')"></div>
+              <div class="wdc-body">
+                <h4 class="wdc-name">Koshary</h4>
+                <p class="wdc-desc">Rice, pasta, lentils, tomato sauce, and crispy onions. Egypt's street food icon.</p>
+                <div class="wdc-tags">
+                  <span class="wdc-tag">🍚 carbohydrate</span>
+                  <span class="wdc-tag">🥩 protein</span>
+                </div>
+                <span class="wdc-hint">Tap to learn more</span>
+              </div>
+            </article>
+
+            <article class="web-dish-card reveal delay-3"
+              data-country="egypt"
+              data-img="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80"
+              data-name="Ta'ameya"
+              data-desc="Egyptian falafel made with fava beans and fresh herbs. You <strong>can</strong> eat it with your hands or with a <strong>fork</strong>. It is part of a <strong>plant-based diet</strong> and is very popular for breakfast in Cairo."
+              data-tags="🌿 protein,🌱 plant-based">
+              <div class="wdc-image" style="background-image: url('https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80')"></div>
+              <div class="wdc-body">
+                <h4 class="wdc-name">Ta'ameya</h4>
+                <p class="wdc-desc">Egyptian falafel with fava beans and herbs. A plant-based Cairo breakfast staple.</p>
+                <div class="wdc-tags">
+                  <span class="wdc-tag">🌿 protein</span>
+                  <span class="wdc-tag">🌱 plant-based</span>
+                </div>
+                <span class="wdc-hint">Tap to learn more</span>
+              </div>
+            </article>
+
+            <article class="web-dish-card reveal"
+              data-country="egypt"
+              data-img="https://commons.wikimedia.org/wiki/Special:FilePath/Om_ali.jpg"
+              data-name="Om Ali 🍮"
+              data-desc="Made with puff pastry, milk, and nuts. You eat it with a <strong>spoon</strong>. A very famous Egyptian dessert — warm, sweet, and rich. Sometimes called Egypt's national dessert. Made in a <strong>dairy</strong> base with a <strong>carbohydrate</strong> crust."
+              data-tags="🍞 carbohydrate,🥛 dairy,🥜 nuts">
+              <div class="wdc-image" style="background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Om_ali.jpg')"></div>
+              <div class="wdc-body">
+                <h4 class="wdc-name">Om Ali 🍮</h4>
+                <p class="wdc-desc">Puff pastry, milk, and nuts. Egypt's beloved national dessert, warm and rich.</p>
+                <div class="wdc-tags">
+                  <span class="wdc-tag">🍞 carbohydrate</span>
+                  <span class="wdc-tag">🥛 dairy</span>
+                  <span class="wdc-tag">🥜 nuts</span>
+                </div>
+                <span class="wdc-hint">Tap to learn more</span>
+              </div>
+            </article>
+
+            <article class="web-dish-card reveal delay-1"
+              data-country="egypt"
+              data-img="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80"
+              data-name="Ful Medames"
+              data-desc="Slow-cooked fava beans with olive oil, lemon juice, and garlic. One of the oldest foods in Egypt — eaten since the time of the Pharaohs. You eat it with <strong>bread</strong> and a <strong>spoon</strong>. Rich in <strong>protein</strong> and fiber."
+              data-tags="🫘 protein,🌿 plant-based,🍋 citrus">
+              <div class="wdc-image" style="background-image: url('https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80')"></div>
+              <div class="wdc-body">
+                <h4 class="wdc-name">Ful Medames</h4>
+                <p class="wdc-desc">Slow-cooked fava beans with olive oil and lemon. Ancient Egyptian breakfast.</p>
+                <div class="wdc-tags">
+                  <span class="wdc-tag">🫘 protein</span>
+                  <span class="wdc-tag">🌿 plant-based</span>
+                </div>
+                <span class="wdc-hint">Tap to learn more</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="restaurant-box reveal delay-2">
+            <h4>📍 Famous Restaurants in Cairo</h4>
+            <div class="rest-chips-row">
+              <span class="rest-chip-web">🍽 Abou El Sid</span>
+              <span class="rest-chip-web">🍽 Koshary Abou Tarek</span>
+              <span class="rest-chip-web">🍽 Naguib Mahfouz Cafe</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── SECTION 5: FAQ ── -->
+        <section class="content-section" id="faq">
+          <p class="eyebrow dark reveal">Frequently Asked Questions</p>
+          <h2 class="reveal delay-1">Egypt FAQ ❓</h2>
+
+          <div class="faq-web-grid">
+            <div class="faq-web-item reveal delay-2">
+              <p class="faq-web-q">Can I take a taxi to the pyramids?</p>
+              <p class="faq-web-a">Yes, tourists <strong>can</strong>, but the bus is cheaper and easier. Ride-share apps like Uber also work well in Cairo.</p>
+            </div>
+            <div class="faq-web-item reveal delay-3">
+              <p class="faq-web-q">Should women cover their shoulders and head?</p>
+              <p class="faq-web-a">Yes, they <strong>should</strong> in mosques. Covering shoulders is respectful in many cultural and historical places throughout Cairo.</p>
+            </div>
+            <div class="faq-web-item reveal delay-4">
+              <p class="faq-web-q">Should I pay in local currency?</p>
+              <p class="faq-web-a">Yes, tourists <strong>should</strong> use <strong>Egyptian pounds</strong> for most local transactions. ATMs are widely available.</p>
+            </div>
+            <div class="faq-web-item reveal">
+              <p class="faq-web-q">Where can I buy a SIM card?</p>
+              <p class="faq-web-a">Tourists <strong>can</strong> buy a SIM card at the airport or in <strong>Vodafone</strong> and <strong>Orange</strong> stores throughout Cairo.</p>
+            </div>
+            <div class="faq-web-item reveal delay-1">
+              <p class="faq-web-q">How long does it take to get to Cairo?</p>
+              <p class="faq-web-a">The trip <strong>can</strong> take about <strong>16 to 22 hours</strong> from South America, depending on the route and connections.</p>
+            </div>
+            <div class="faq-web-item reveal delay-2">
+              <p class="faq-web-q">Are photos allowed inside the tombs?</p>
+              <p class="faq-web-a">Sometimes yes, but often an <strong>extra ticket</strong> is necessary. Always ask before photographing in restricted areas.</p>
+            </div>
+            <div class="faq-web-item reveal delay-3">
+              <p class="faq-web-q">How many pyramids are in Giza?</p>
+              <p class="faq-web-a"><strong>There are</strong> three main pyramids in Giza: Khufu (the Great Pyramid), Khafre, and Menkaure.</p>
+            </div>
+            <div class="faq-web-item reveal delay-4">
+              <p class="faq-web-q">How much water should I carry in the desert?</p>
+              <p class="faq-web-a">Tourists need a <strong>lot</strong> of water — at least 2–3 liters per day. The weather is very hot and dehydration is a serious risk.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── PRACTICAL STRIP ── -->
+        <div class="detail-band reveal">
+          <div class="detail-block">
+            <span>Wear</span>
+            <strong>Breathable outfits, sunglasses, hat, and strong sun protection</strong>
+          </div>
+          <div class="detail-block">
+            <span>Move with care</span>
+            <strong>High temperatures require water, shade, and steady pacing all day</strong>
+          </div>
+          <div class="detail-block">
+            <span>Ideal booking</span>
+            <strong>Guided pyramid tours, sunset camel rides, and Nile culture outings</strong>
           </div>
         </div>
 
-        <!-- SECTION 4: Gastronomy & Food -->
-        <div class="pres-section reveal" id="food">
-          <div class="section-heading">
-            <p class="eyebrow dark">Section 4 of 5</p>
-            <h2>Gastronomy &amp; Food</h2>
-            <p class="section-question">What kind of food should I try?</p>
-          </div>
-          <div class="tour-grid">
-            <article class="tour-card reveal">
-              <div class="tour-image" style="background-image: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1400');"></div>
-              <div class="tour-body">
-                <p class="tour-type">Main Dish</p>
-                <h4>Koshary</h4>
-                <p>Mixed with rice, pasta, lentils, and spiced tomato sauce with crispy onions.</p>
-              </div>
-            </article>
-            <article class="tour-card reveal delay-1">
-              <div class="tour-image" style="background-image: url('https://images.unsplash.com/photo-1572252009286-268acec5ca0a?auto=format&fit=crop&w=1400&q=80');"></div>
-              <div class="tour-body">
-                <p class="tour-type">Street Food</p>
-                <h4>Ta'ameya</h4>
-                <p>Egyptian falafel, made from fava beans and fresh herbs, giving it a vibrant green color inside.</p>
-              </div>
-            </article>
-            <article class="tour-card reveal delay-2">
-              <div class="tour-image" style="background-image: url('https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1400');"></div>
-              <div class="tour-body">
-                <p class="tour-type">Dessert</p>
-                <h4>Om Ali</h4>
-                <p>A star dessert — pudding with puff pastry, milk, and nuts. This dish is eaten <strong>hot</strong>.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- SECTION 5: FAQ -->
-        <div class="pres-section reveal" id="faq">
-          <div class="section-heading">
-            <p class="eyebrow dark">Section 5 of 5</p>
-            <h2>Frequently Asked Questions</h2>
-          </div>
-          <div class="section-banner" style="background-image: url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=1400&q=80');"></div>
-          <div class="practical-grid">
-            <article class="practical-card reveal">
-              <h4>Can I take a taxi to the Pyramids?</h4>
-              <p>Taxis are more expensive. You can take a <strong>bus</strong> — it is easy and cheap.</p>
-            </article>
-            <article class="practical-card reveal delay-1">
-              <h4>Should women cover their shoulders and heads?</h4>
-              <p>Yes, it is <strong>mandatory in mosques</strong> and respectful in the city.</p>
-            </article>
-            <article class="practical-card reveal delay-2">
-              <h4>Should I pay in local currency?</h4>
-              <p>Yes, most monuments only accept <strong>cards or EGP</strong> (Egyptian Pounds).</p>
-            </article>
-            <article class="practical-card reveal">
-              <h4>Where can I buy a SIM card?</h4>
-              <p>At the <strong>airport</strong> or at Vodafone/Orange stores in the city.</p>
-            </article>
-            <article class="practical-card reveal delay-1">
-              <h4>Are photos allowed in the tombs?</h4>
-              <p>Sometimes, but it usually requires an <strong>extra ticket</strong>.</p>
-            </article>
-          </div>
-        </div>
-
-      </section>
+      </div>
     </main>
+
+    <footer class="site-footer">
+      <p>✈ &nbsp;<strong>Venture Elite Travel Agency</strong> &nbsp;·&nbsp; <a href="index.html">Home</a> &nbsp;·&nbsp; <a href="finland.html">Finland →</a></p>
+    </footer>
   </div>
 
-  <!-- Presentation Navigation Bar -->
-  <nav class="pres-nav" id="presNav">
-    <div class="pres-progress"><div class="pres-progress-fill"></div></div>
-    <button class="pres-nav-btn" id="prevBtn">&#8592; Prev</button>
-    <div class="pres-nav-info">
-      <span id="sectionTitle">Introduction</span>
-      <span class="pres-counter" id="sectionCounter">1 / 5</span>
+  <!-- Dish overlay -->
+  <div id="webDishOverlay" class="web-dish-overlay" role="dialog" aria-modal="true">
+    <div class="web-overlay-card" id="webOverlayCard">
+      <button class="web-overlay-close" id="webOverlayClose" aria-label="Close">✕</button>
+      <img class="web-overlay-img" id="webOverlayImg" src="" alt="">
+      <div class="web-overlay-body">
+        <p class="web-overlay-country" id="webOverlayCountry"></p>
+        <h3 class="web-overlay-name" id="webOverlayName"></h3>
+        <p class="web-overlay-desc" id="webOverlayDesc"></p>
+        <div class="web-overlay-tags" id="webOverlayTags"></div>
+        <p class="web-overlay-esc">Press Esc or click outside to close</p>
+      </div>
     </div>
-    <button class="pres-nav-btn" id="nextBtn">Next &#8594;</button>
-  </nav>
-
-  <footer class="site-footer">
-    <p class="footer-brand">Venture Elite</p>
-    <p class="footer-tagline">Egypt — Cairo, The Nile</p>
-    <div class="footer-divider"></div>
-    <div class="footer-links">
-      <a href="index.html">Back to Collection</a>
-      <a href="finland.html">Next: Finland</a>
-    </div>
-    <p class="footer-note">English A1 Travel Agency Project</p>
-  </footer>
+  </div>
 
   <script src="script.js"></script>
+  <script>
+    /* ── DISH OVERLAY ── */
+    class WebDishOverlay {
+      constructor() {
+        this.overlay = document.getElementById('webDishOverlay');
+        this.card    = document.getElementById('webOverlayCard');
+        this.img     = document.getElementById('webOverlayImg');
+        this.country = document.getElementById('webOverlayCountry');
+        this.name    = document.getElementById('webOverlayName');
+        this.desc    = document.getElementById('webOverlayDesc');
+        this.tags    = document.getElementById('webOverlayTags');
+        this.setupCards();
+        document.getElementById('webOverlayClose').addEventListener('click', () => this.close());
+        this.overlay.addEventListener('click', e => { if (e.target === this.overlay) this.close(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') this.close(); });
+      }
+      setupCards() {
+        document.querySelectorAll('.web-dish-card').forEach(card => {
+          card.addEventListener('click', () => this.open(card));
+        });
+      }
+      open(card) {
+        const c = card.dataset.country || 'egypt';
+        this.img.src = card.dataset.img || '';
+        this.img.alt = card.dataset.name || '';
+        this.country.textContent = c === 'finland' ? '🇫🇮 Finland' : '🇪🇬 Egypt';
+        this.name.textContent = card.dataset.name || '';
+        this.desc.innerHTML  = card.dataset.desc || '';
+        const tagStr = card.dataset.tags || '';
+        this.tags.innerHTML = tagStr ? tagStr.split(',').map(t =>
+          `<span class="web-overlay-tag">${t.trim()}</span>`).join('') : '';
+        this.card.className = `web-overlay-card ${c}-theme`;
+        this.overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+      close() {
+        this.overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    /* ── ACTIVE NAV LINK HIGHLIGHT ── */
+    const sections = document.querySelectorAll('.content-section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+
+    const navObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(a => {
+            a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id);
+          });
+        }
+      });
+    }, { threshold: 0.4 });
+
+    sections.forEach(s => navObserver.observe(s));
+
+    new WebDishOverlay();
+  </script>
 </body>
 </html>
